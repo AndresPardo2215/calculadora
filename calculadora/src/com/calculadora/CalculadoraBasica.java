@@ -1,15 +1,14 @@
 package com.calculadora;
 
-public class CalculadoraBasica implements Operable{
+public class CalculadoraBasica extends abstractCalculadora implements Operable{
+
 
     @Override
     public double sumar(double x, double y) {
         return x+y;
     }
-
     @Override
     public double sumar(String x, String y) {
-
         return Double.parseDouble(x) +Double.parseDouble(y);
     }
 
@@ -31,6 +30,7 @@ public class CalculadoraBasica implements Operable{
     @Override
     public double dividir(String x, String y) {
         return Double.parseDouble(x) +Double.parseDouble(y);
+
     }
 
     @Override
@@ -41,5 +41,17 @@ public class CalculadoraBasica implements Operable{
     @Override
     public double multiplicar(String x, String y) {
         return Double.parseDouble(x) +Double.parseDouble(y);
+    }
+
+    @Override
+    protected String imprimirMenu() {
+        return """
+                "\n=== calculadora Basica ===
+                1. suma
+                2. resta
+                3. multiplicación
+                4. division
+                """;
+
     }
 }
