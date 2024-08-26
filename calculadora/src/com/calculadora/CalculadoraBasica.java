@@ -44,6 +44,12 @@ public class CalculadoraBasica extends abstractCalculadora implements Operable{
 
     @Override
     protected String imprimirMenu() {
-        return "";
+        return """
+                "\n=== calculadora Basica ===
+                1. suma
+                2. resta
+                3. multiplicación
+                4. division
+                """;
     }
 }
