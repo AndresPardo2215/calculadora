@@ -9,7 +9,8 @@ public class CalculadoraBasica implements Operable{
 
     @Override
     public double sumar(String x, String y) {
-        return 0;
+
+        return Double.parseDouble(x) +Double.parseDouble(y);
     }
 
     @Override
@@ -19,7 +20,7 @@ public class CalculadoraBasica implements Operable{
 
     @Override
     public double restar(String x, String y) {
-        return 0;
+        return Double.parseDouble(x) +Double.parseDouble(y);
     }
 
     @Override
@@ -29,7 +30,7 @@ public class CalculadoraBasica implements Operable{
 
     @Override
     public double dividir(String x, String y) {
-        return 0;
+        return Double.parseDouble(x) +Double.parseDouble(y);
     }
 
     @Override
@@ -39,6 +40,6 @@ public class CalculadoraBasica implements Operable{
 
     @Override
     public double multiplicar(String x, String y) {
-        return 0;
+        return Double.parseDouble(x) +Double.parseDouble(y);
     }
 }
