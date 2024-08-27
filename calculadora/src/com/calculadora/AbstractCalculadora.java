@@ -6,4 +6,6 @@ public abstract class AbstractCalculadora {
     }
 
     protected abstract String imprimirMenu();
+
+    protected abstract double switchCalculadora(int opcion);
 }

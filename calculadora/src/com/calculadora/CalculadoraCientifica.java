@@ -43,4 +43,9 @@ public class CalculadoraCientifica extends AbstractCalculadora {
                 8. coseno
                 9. tangente""";
     }
+
+    @Override
+    protected double switchCalculadora(int opcion) {
+        return 0;
+    }
 }
