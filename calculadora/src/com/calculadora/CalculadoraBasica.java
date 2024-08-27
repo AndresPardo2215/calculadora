@@ -11,18 +11,8 @@ public class CalculadoraBasica extends AbstractCalculadora implements Operable {
     }
 
     @Override
-    public double sumar(String x, String y) {
-        return 0;
-    }
-
-    @Override
     public double restar(double x, double y) {
         return x - y;
-    }
-
-    @Override
-    public double restar(String x, String y) {
-        return 0;
     }
 
     @Override
@@ -31,18 +21,8 @@ public class CalculadoraBasica extends AbstractCalculadora implements Operable {
     }
 
     @Override
-    public double dividir(String x, String y) {
-        return 0;
-    }
-
-    @Override
     public double multiplicar(double x, double y) {
         return x * y;
-    }
-
-    @Override
-    public double multiplicar(String x, String y) {
-        return 0;
     }
 
     @Override
@@ -92,7 +72,6 @@ public class CalculadoraBasica extends AbstractCalculadora implements Operable {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Ingresa un numero valido");
-                running = true;
             }
         }
         return resultado;
