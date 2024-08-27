@@ -1,6 +1,6 @@
 package com.calculadora;
 
-public class CalculadoraCientifica extends CalculadoraBasica {
+public class CalculadoraCientifica extends AbstractCalculadora {
 
     //potencia,raiz, seno,cos,tang
 
@@ -29,4 +29,18 @@ public class CalculadoraCientifica extends CalculadoraBasica {
         return Math.tan(anduloRadianes);
     }
 
+    @Override
+    protected String imprimirMenu() {
+        return """
+                \n=== calculadora Basica ===
+                1. suma
+                2. resta
+                3. multiplicación
+                4. division
+                5. potencia
+                6. raíz cuadrada
+                7. seno
+                8. coseno
+                9. tangente""";
+    }
 }

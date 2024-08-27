@@ -1,7 +1,7 @@
 package com.calculadora;
 
-public abstract class abstractCalculadora {
-    public abstractCalculadora (){
+public abstract class AbstractCalculadora {
+    public AbstractCalculadora (){
         imprimirMenu();
     }
 

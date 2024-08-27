@@ -1,6 +1,6 @@
 package com.calculadora;
 
-public class CalculadoraBasica extends abstractCalculadora implements Operable{
+public class CalculadoraBasica extends AbstractCalculadora implements Operable{
 
     @Override
     public double sumar(double x, double y) {
