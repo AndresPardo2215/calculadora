@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        AbstractCalculadora calculadora = new CalculadoraBasica();
+        AbstractCalculadora calculadora = new CalculadoraCientifica();
         try {
             System.out.println(calculadora.imprimirMenu());
             int opcion = scanner.nextInt();
