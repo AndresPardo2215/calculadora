@@ -122,10 +122,13 @@ public class CalculadoraCientifica extends AbstractCalculadora {
                     }
                     default: {
                         System.out.println("opcion no valida");
+                        break;
                     }
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Ingresa numeros validos");
+            } catch (RuntimeException e) {
+                System.out.println(e.getMessage());
             }
         }
         return resultado;
