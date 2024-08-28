@@ -17,6 +17,10 @@ public class CalculadoraBasica extends AbstractCalculadora implements Operable {
 
     @Override
     public double dividir(double x, double y) {
+        if(y == 0)
+        {
+            throw new ArithmeticException("No se puede dividir entre cero");
+        }
         return x / y;
     }
 
@@ -72,7 +76,9 @@ public class CalculadoraBasica extends AbstractCalculadora implements Operable {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Ingresa un numero valido");
-            }
+            }  catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
         }
         return resultado;
     }

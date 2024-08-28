@@ -7,15 +7,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         AbstractCalculadora calculadora = new CalculadoraCientifica();
-
-            System.out.println(calculadora.imprimirMenu());
+        int numOpciones = (calculadora instanceof CalculadoraCientifica? 10 : 5);
+        System.out.println(calculadora.imprimirMenu());
         boolean running = true;
         while(running){
             int opcion = 0;
             System.out.println("elige una operacion");
             try{
                 opcion = scanner.nextInt();
-                if (opcion >=10) {throw new RuntimeException();}
+                if (opcion >=numOpciones) {throw new RuntimeException();}
                 System.out.println(calculadora.switchCalculadora(opcion));
                 running = false;
             } catch (InputMismatchException e) {

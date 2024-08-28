@@ -92,7 +92,9 @@ public class CalculadoraCientifica extends AbstractCalculadora {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Ingresa numeros validos");
-            }
+            }  catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
         }
 
         while(running2) {
