@@ -16,8 +16,10 @@ public class Main {
                 calculadora = new CalculadoraBasica();
             else if(calculadoraSeleccion.equals("2"))
                 calculadora = new CalculadoraCientifica();
-            else  System.out.println("Opción no válida");
-        System.out.println(calculadoraSeleccion);
+            else  {
+                System.out.println("Opción no válida");
+                System.exit(0);
+            }
 
         int numOpciones = (calculadora instanceof CalculadoraCientifica? 10 : 5);
         System.out.println(calculadora.imprimirMenu());
